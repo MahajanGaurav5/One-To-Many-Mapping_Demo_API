@@ -31,7 +31,7 @@ public class AddressController
         return ads;
 
     }
-// this is for getmapping
+// this is for getmapping for get all address
     @GetMapping("/getallads")
     public List<Address> getAddressesData()
     {
