@@ -23,6 +23,7 @@ public class AddressController
 
     }
 
+    //this is getting one address by id
     @GetMapping("/getads/{address_id}")
     public Address getAddressData(@PathVariable Integer address_id)
     {
@@ -40,6 +41,7 @@ public class AddressController
         return ads1;
     }
 
+    //this is updating address by id
     @PutMapping("/updateads/{address_id}")
     public Address updateAddress(@RequestBody Address address, @PathVariable Integer address_id)
     {
