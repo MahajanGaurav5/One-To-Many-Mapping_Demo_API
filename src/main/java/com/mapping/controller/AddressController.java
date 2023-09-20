@@ -47,6 +47,7 @@ public class AddressController
         return adsService.updateAddress(address, address_id);
     }
 
+    //this is for deleting one address by id
     @DeleteMapping("/deleteads/{address_id}")
     public String deleteAddressData(@PathVariable Integer address_id)
     {
