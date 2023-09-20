@@ -14,6 +14,7 @@ public class AddressController
     @Autowired
     private AddressService adsService;
 
+    //this is post mapping for save address
     @PostMapping("/saveads/{stdId}")
     public  Address saveAddress(@RequestBody Address address ,@PathVariable Integer stdId )
     {
